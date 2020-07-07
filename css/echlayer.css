@@ -1,0 +1,154 @@
+
+.RelativeLayout {
+    position: relative;
+}
+
+.alignParentTop-center {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.alignParentBottom-center {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.alignParentTop-Left {
+    position: absolute;
+    left: 0;
+}
+
+.alignParentTop-Right {
+    position: absolute;
+    right: 0px;
+
+}
+
+.alignParentBottom-Right {
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+
+
+}
+
+.alignParentBottom-Left {
+    position: absolute;
+
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.alignParentRight-center {
+    position: absolute;
+
+    right: 0px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+
+
+}
+
+.alignParentLeft-center {
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+
+
+}
+
+.alignParentCenter {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+
+
+}
+.h-linearlayout-lt{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    align-content: center;
+}
+.h-linearlayout-lb{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:flex-end;
+    align-content: center;
+}
+.H-linearlayout-rt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+}
+.H-linearlayout-rb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: stretch;
+}
+.H-linearlayout-c{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: stretch;
+}
+
+.v-linearlayout-l{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: stretch;
+
+}
+
+.v-linearlayout-c{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+
+}
+.v-linearlayout-r{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: stretch;
+
+}
+.v-linearlayout-s{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+.weight-fill{
+    flex-grow:1;
+}
