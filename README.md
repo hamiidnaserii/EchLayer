@@ -7,8 +7,6 @@ ECH LAYER | css
 
 css by logic of the Android layers
 
-Library classes :
-
 
 demo : https://hamiidnaserii.github.io/EchLayer/
 
