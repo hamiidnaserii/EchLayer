@@ -8,161 +8,32 @@
     <meta name="fontiran.com:license" content="Y68A9">
     <title>ECH-layer</title>
 
+    <link rel="stylesheet" href="css/echlayer.css">
 
     <style>
 
-        .RelativeLayout {
-            position: relative;
+        button{
+            padding:10px;
+            margin:10px;
+            color: white;
+            border: none;
+            font-size:20px;
+            border-radius:10px;
         }
-
-        .alignParentTop-center {
-            position: absolute;
-            right: 50%;
-            transform: translate(50%);
+        .item{
+            margin:3px;
+            width:60px;
+            font-size:20px;
+            color:white;
+            text-align: center;
+            height:60px;
         }
-
-        .alignParentBottom-center {
-            position: absolute;
-            bottom: 0px;
-            right: 50%;
-            transform: translate(50%);
-        }
-
-        .alignParentTop-Left {
-            position: absolute;
-            left: 0;
-        }
-
-        .alignParentTop-Right {
-            position: absolute;
-            right: 0px;
-
-        }
-
-        .alignParentBottom-Right {
-            position: absolute;
-
-            right: 0px;
-            bottom: 0px;
-
-
-        }
-
-        .alignParentBottom-Left {
-            position: absolute;
-
-            left: 0px;
-            bottom: 0px;
-
-        }
-
-        .alignParentRight-center {
-            position: absolute;
-
-            right: 0px;
-            bottom: 50%;
-            transform: translate(0, 50%);
-
-
-        }
-
-        .alignParentLeft-center {
-            position: absolute;
-            left: 0px;
-            bottom: 50%;
-            transform: translate(0, 50%);
-
-
-        }
-
-        .alignParentCenter {
-            position: absolute;
-            right: 50%;
-            bottom: 50%;
-            transform: translate(50%, 50%);
-
-
-        }
-        .h-linearlayout-lt{
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items:flex-start;
-            align-content: center;
-        }
-        .h-linearlayout-lb{
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items:flex-end;
-            align-content: center;
-        }
-        .H-linearlayout-rt{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            align-content: stretch;
-        }
-        .H-linearlayout-rb{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: flex-end;
-            align-content: stretch;
-        }
-        .H-linearlayout-c{
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: flex-end;
-            align-content: stretch;
-        }
-
-        .v-linearlayout-l{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: flex-end;
-            align-content: stretch;
-
-        }
-
-        .v-linearlayout-c{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: center;
-            align-content: stretch;
-
-        }
-        .v-linearlayout-r{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: flex-start;
-            align-content: stretch;
-
-        }
-        .v-linearlayout-s{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: stretch;
-            align-content: stretch;
-
-        }
-        .weight-fill{
-            flex-grow:1;
+        textarea{
+            width:300px;
+            background-color:black;
+            color: white;
+            margin:10px;
+            height:300px;
         }
 
     </style>
@@ -171,231 +42,45 @@
 
 <body>
 
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-lt</p>
-<div class="h-linearlayout-lt" style="background-color: #dedede;">
+<button style="background-color: blueviolet" type="button"> linearlayout horizontally </button>
 
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
+<div class="linearlayout-h" style="background-color: #000000">
+    <div style="background-color: #f61958" class="item"> one </div>
+    <div style="background-color: #2f19f6" class="item"> two </div>
+    <div style="background-color: #f6a519" class="item"> three </div>
 </div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
 
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-lb</p>
-<div class="h-linearlayout-lb" style="background-color: #dedede;">
+<button style="background-color: #e343ee" type="button"> linearlayout horizontally + Item weight-fill </button>
 
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
+<div class="linearlayout-h" style="background-color: #000000">
+    <div style="background-color: #f61958" class="item"> one </div>
+    <div style="background-color: #2f19f6" class="item"> two </div>
+    <div style="background-color: #58a800" class="item weight-fill"> weight-fill </div>
+    <div style="background-color: #f6a519" class="item"> three </div>
 </div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
 
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-rt</p>
-<div class="h-linearlayout-rt" style="background-color: #dedede;">
+<button style="background-color: dodgerblue" type="button"> linearlayout vertically  </button>
 
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
+<div class="linearlayout-v" style="background-color: #000000">
+    <div style="background-color: #f61958" class="item"> one </div>
+    <div style="background-color: #2f19f6" class="item"> two </div>
+    <div style="background-color: #f6a519" class="item"> three </div>
 </div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
 
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-rb</p>
+<button style="background-color: #58a800" type="button"> RelativeLayout</button>
 
-<div class="h-linearlayout-rb" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
+<div class="RelativeLayout" style="background-color: #000000;width:100%;height:300px">
+    <button class="alignParentCenter" style="background-color: #f61958" type="button"> alignParentCenter  </button>
+    <button class="alignParentTop-center" style="background-color: #2f19f6" type="button"> alignParentTop-center  </button>
+    <button class="alignParentBottom-center" style="background-color: #f6a519" type="button"> alignParentBottom-center  </button>
+    <button class="alignParentTop-Left" style="background-color: #f64519" type="button"> alignParentTop-Left  </button>
+    <button class="alignParentLeft-center" style="background-color: #00a0a0" type="button"> alignParentLeft-center  </button>
+    <button class="alignParentBottom-Left" style="background-color: #d519f6" type="button"> alignParentBottom-Left  </button>
+    <button class="alignParentTop-Right" style="background-color: #03ac3b" type="button"> alignParentTop-Right  </button>
+    <button class="alignParentRight-center" style="background-color: #9a0318" type="button"> alignParentRight-center  </button>
+    <button class="alignParentBottom-Right" style="background-color: #972e07" type="button"> alignParentBottom-Right  </button>
 </div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
 
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-c</p>
-<div class="h-linearlayout-c" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">h-linearlayout-rb   +   weight-fill</p>
-<div class="h-linearlayout-rb" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div class="item2 weight-fill" style="font-size:30px;text-align: center;background-color: #1e7e34">weight-fill</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">v-linearlayout-l</p>
-<div class="v-linearlayout-l" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">v-linearlayout-c</p>
-<div class="v-linearlayout-c" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">v-linearlayout-r</p>
-<div class="v-linearlayout-r" style="background-color: #dedede;">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">v-linearlayout-s</p>
-<div class="v-linearlayout-s" style="background-color: #dedede;">
-
-    <div style="height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-    <div style="height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">2</div>
-    <div style="height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">v-linearlayout-c + weight-fill</p>
-<div class="v-linearlayout-c"  style="background-color: #dedede;height:350px">
-
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">1</div>
-
-    <div class="item22 weight-fill" style="font-size:30px;width: 180px;text-align: center;background-color: #1e7e34">weight-fill</div>
-    <div style="width:50px;height:50px;background-color: #ff2e61;font-size:30px;color: white;text-align: center">3</div>
-    <div style="width:50px;height:70px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">4</div>
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class="alignParentTop-Right" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentTop-Right</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentRight-center" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentRight-center</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentBottom-Right" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentBottom-Right</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentCenter" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentCenter</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentBottom-center" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentBottom-center</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentBottom-left" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentBottom-left</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentLeft-center" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentLeft-center</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentTop-Left" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentTop-Left</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
-
-<p style="font-size: 30px;margin: 10px;width:100%;text-align:center">RelativeLayout</p>
-<div class="RelativeLayout"  style="background-color: #dedede;height:300px">
-
-    <div class=" alignParentTop-center" style="width:auto;height:50px;background-color: #4d2eff;font-size:30px;color: white;text-align: center">alignParentTop-center</div>
-
-
-
-</div>
-<div style="border-top: 1px solid black;height: 1px;margin:20px 0 20px 0"></div>
 
 
 </body>
